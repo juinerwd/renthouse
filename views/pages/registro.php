@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="container-button">
-            <div class="enlace-login">
+            <div class="enlace-register">
                 <p>¿Ya tienes una cuenta? <a href="#">Iniciar Sesión</a></p>
             </div>
             <div class="btn-registrar">

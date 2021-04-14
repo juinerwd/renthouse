@@ -59,19 +59,19 @@
     include "views/components/header.php";
     
     if(isset($_GET["route"])){
-     if(isset($_GET["route"])){
-         if($_GET["route"]=="registro" ||
+        if($_GET["route"]=="registro" ||
             $_GET["route"]=="home"||
             $_GET["route"]=="view-admin"||
             $_GET["route"]=="usuarios-admin" ||
             $_GET["route"]=="apartmentone" ||
-            $_GET["route"]=="view-user"
-            ){
-             include "pages/".$_GET["route"].".php";
-         }
-     }else{
+            $_GET["route"]=="view-user" ||
+            $_GET["route"]=="login"
+        ){
+            include "pages/".$_GET["route"].".php";
+        }
+    }else{
          include "pages/home.php";
-     }
+    }
         include "views/components/footer.php";
  ?>
     
