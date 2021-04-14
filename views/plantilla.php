@@ -41,6 +41,12 @@
     <!-- Modernizr
     ================================================== -->
     <script src="views/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+                        	<!-- All The JS Files
+	================================================== --> 
+	<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+    
 </head>
 <body>
  <?php
@@ -50,7 +56,10 @@
      if(isset($_GET["route"])){
 
          if($_GET["route"]=="registro" ||
-            $_GET["route"]=="home"){
+            $_GET["route"]=="home" ||
+            $_GET["route"]=="apartmentone" ||
+            $_GET["route"]=="view-user"
+            ){
              include "pages/".$_GET["route"].".php";
          }
 
@@ -59,6 +68,6 @@
      }
         include "views/components/footer.php";
  ?>
-    <!-- <script src="views/assets/js/usuario.js"></script> -->
+    
 </body>
 </html>
