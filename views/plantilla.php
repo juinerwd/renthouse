@@ -50,7 +50,9 @@
      if(isset($_GET["route"])){
 
          if($_GET["route"]=="registro" ||
-            $_GET["route"]=="home"){
+            $_GET["route"]=="home" ||
+            $_GET["route"]=="apartmentone"
+            ){
              include "pages/".$_GET["route"].".php";
          }
 

@@ -1,3 +1,31 @@
+<!-- ====== Page Header ====== --> 
+<div class="page-header default-template-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">                
+                    <h2 class="page-title">Apartamentos</h2>
+                    <p class="page-description">Más detalles sobre el apartamento</p>        
+                </div><!-- /.col-md-12 -->
+            </div><!-- /.row-->
+        </div><!-- /.container-fluid -->           
+    </div><!-- /.page-header -->
+
+   <!-- ====== Breadcrumbs Area====== --> 
+   <div class="breadcrumbs-area">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-12">
+                   <div class="breadcrumbs">
+                       <span class="first-item">
+                        <a href="home">Inicio</a></span>
+                       <span class="separator">&gt;</span>
+                       <span class="last-item">Apartamento familiar</span>
+                   </div>
+               </div><!-- /.col-md-12 -->
+           </div><!-- /.row -->
+       </div><!-- /.container -->
+   </div><!-- /.breadcrumbs-area -->
+
 <!-- ====== Apartments-Single-Area ======= --> 
 <div class="apartment-single-area">
     <div class="container">
@@ -6,8 +34,8 @@
                 <div class="corousel-gallery-content">
                         <div class="gallery">
                             <div class="full-view owl-carousel">
-                                <a class="item image-pop-up" href="views/assets/img/apartment/habitacion-1.png">
-                                    <img src="views/assets/img/apartment/habitacion-1.png" alt="corousel">
+                                <a class="item image-pop-up" href="views/assets/img/apartment/habitacion-1.jpg">
+                                    <img src="views/assets/img/apartment/habitacion-1.jpg" alt="corousel">
                                 </a>
                                 <a class="item image-pop-up" href="views/assets/img/apartment/habitacion-1-1.jpg">
                                     <img src="views/assets/img/apartment/habitacion-1-1.jpg" alt="corousel">
@@ -25,7 +53,7 @@
 
                             <div class="list-view owl-carousel">
                                 <div class="item">
-                                    <img src="views/assets/img/apartment/habitacion-1.png" alt="corousel-image">
+                                    <img src="views/assets/img/apartment/habitacion-1.jpg" alt="corousel-image">
                                 </div>
                                 <div class="item">
                                     <img src="views/assets/img/apartment/habitacion-1-1.jpg" alt="corousel-image">
