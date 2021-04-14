@@ -86,14 +86,14 @@
                         <h3>Información del precio</h3>
                         <ul>
                             <li><span>Precio x noche: </span> $250.000</li>
-                            <li><span>Tarifa por servicio:</span>10% sobre el precio x noche</li>
+                            <li><span>Tarifa por servicio: </span>10% sobre el precio x noche</li>
                         </ul>
                     </div><!-- /.price -->
 
                     <div class="property-details">
                         <h3>Detalles de la propiedad</h3>
                         <ul>
-                            <li><span>Cantidad de huéspedes</span>4</li>
+                            <li><span>Cantidad de huéspedes </span>4</li>
                         </ul>
                     </div><!-- /.Property -->
                     <div class="apartment-overview">
@@ -148,53 +148,25 @@
             </div> <!-- /.col-md-8 -->
 
             <div class="col-md-4">
-                <div class="apartment-sidebar">                    
-                    <div class="widget_rental_search clerafix">					
-                        <div class="form-border gradient-border">
-                            <form action="booking.html" method="get" class="advance_search_query booking-form">
-                                <div class="form-bg seven">
-                                    <div class="form-content">
-                                        <h2 class="form-title">Renta este apartamento</h2>
-                                        <div class="form-group">
-                                            <label>Nombre completo</label>
-                                            <input type="text" name="FirstName" placeholder="Full name">
-                                        </div><!-- /.form-group -->
-                                        <div class="form-group">
-                                            <label>Número de celular</label>
-                                            <input type="tel" name="phone number" placeholder="+99(99)9999-9999">
-                                        </div><!-- /.form-group -->
-                                        <div class="form-group">
-                                            <label>Email</label>
-                                            <input type="email" name="Email" placeholder="example@domain.com">
-                                        </div><!-- /.form-group -->
-                                        <div class="form-group">
-                                            <label>Adultos</label>
-                                            <input type="number" step="1" min="1" max="100" name="quantity" value="1" title="Qty" size="4" class="input-text">
-                                        </div><!-- /.form-group -->
-                                        <div class="form-group">
-                                            <label>Niños</label>
-                                            <input type="number" step="1" min="1" max="100" name="quantity" value="1" title="Qty" size="4" class="input-text">
-                                        </div><!-- /.form-group -->
-                                        <div class="form-group">
-                                            <label>Deja un mensaje</label>
-                                            <textarea name="message" placeholder="Message" class="form-controller"></textarea>
-                                        </div><!-- /.form-group -->
-                                        <div class="form-group">
-                                            <button type="submit" class="button default-template-gradient button-radius">Solicitar reserva</button>
-                                        </div><!-- /.form-group -->
-                                    </div><!-- /.form-content -->
-                                </div><!-- /.form-bg -->
-                            </form> <!-- /.advance_search_query -->
-                        </div><!-- /.form-border -->
-                    </div><!-- /.widget_rental_search -->
+                    <div class="apartment-sidebar">                    
+        				<div class="widget_rental_search clerafix">					
+        					<div class="form-border gradient-border">
+        						<form action="view-user" method="get" class="advance_search_query booking-form">
+        							<div class="form-bg seven">
+        								<div class="form-content">
+                                            <h2 class="form-title">Renta este apartamento</h2>
+        									<div class="form-group">
+                                                <button type="submit" class="button default-template-gradient button-radius">Rellenar formulario de reserva</button>
+        									</div><!-- /.form-group -->
+        								</div><!-- /.form-content -->
+        							</div><!-- /.form-bg -->
+        						</form> <!-- /.advance_search_query -->
+        					</div><!-- /.form-border -->
+        				</div><!-- /.widget_rental_search -->
 
-                    <!-- <div class="apartments-content seven post clerafix">
-                        <div class="image-content">
-                            <a href="#"><img class="overlay-image" src="assets/images/apartment-ad.png" alt="about" /></a>
-                        </div>
-                    </div> -->
                 </div><!-- /.apartment-sidebar -->
             </div> <!-- .col-md-4 -->
         </div> <!-- /.row -->
     </div> <!-- /.container -->
 </div> <!-- /.appartment-single-area -->
+
