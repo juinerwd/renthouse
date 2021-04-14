@@ -235,7 +235,6 @@
                     </div><!-- /.partments-content -->
                 </div><!-- /.col-md-3 -->
 
-<!-- FIN VISTAS -->
         
             </div><!-- /.row -->
             <a href="#" class="button nevy-button button-radius">Todas las casas</a>
