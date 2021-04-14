@@ -85,11 +85,11 @@
                                 <a href="#"><i class="fa fa-phone-square"></i>Llámanos - 321 555 5555</a>
                             </li>
                             <li>
-                                <a href="#" class="cd-signin"><i
+                                <a href="login" class="cd-signin"><i
                                         class="fa fa-address-book"></i>Login</a>
                             </li>
                             <li>
-                                <a href="#" class="cd-signin"><i
+                                <a href="registro" class="cd-signin"><i
                                         class="fa fa-address-book"></i>Registro</a>
                             </li>
                             <li>

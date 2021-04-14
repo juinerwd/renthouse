@@ -1,5 +1,9 @@
 <!-- url amigables -->
+<?php
 
+    $ruta = RouteController::ctrRuta();
+
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -38,6 +42,7 @@
     <link rel="stylesheet" href="views/assets/css/plugins.css">
     <link rel="stylesheet" href="views/assets/css/colors.css">
     <link rel="stylesheet" href="views/assets/css/style.css">
+    <link rel="stylesheet" href="views/assets/css/forms.css">
     <!-- Modernizr
     ================================================== -->
     <script src="views/assets/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -46,13 +51,13 @@
  <?php
     // include "views/components/menu.php";
     include "views/components/header.php";
+    
+    if(isset($_GET["route"])){
 
-     if(isset($_GET["route"])){
-
-         if($_GET["route"]=="registro" ||
-            $_GET["route"]=="home"){
-             include "pages/".$_GET["route"].".php";
-         }
+        if($_GET["route"]=="registro" ||
+        $_GET["route"]=="home"){
+            include "pages/".$_GET["route"].".php";
+        }
 
      }else{
          include "pages/home.php";
