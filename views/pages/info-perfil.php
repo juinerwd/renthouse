@@ -42,6 +42,7 @@ INFO PERFIL
 								<th>Apellidos</th>
 								<th>Documento</th>
 								<th>Correo electrónico</th>
+								<th>Ciudad de residencia</th>
 								<th>Editar información</th>
 							</tr>
 							</thead>
@@ -51,6 +52,7 @@ INFO PERFIL
 								<td>Perez Perez</td>
 								<td>10234567890</td>
 								<td>pepito@perez.com</td>
+								<td>Bogotá D.C</td>
 								<td>
 									<button type="button" class="btn btn-warning text-white"><i class="fas fa-user-edit"></i></button>
 								</td>

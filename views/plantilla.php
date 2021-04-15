@@ -39,6 +39,13 @@
     
     <!-- CSS
     ================================================== -->
+    <!-- bootstrap datepicker -->
+	<link rel="stylesheet" href="css/plugins/bootstrap-datepicker.standalone.min.css">
+    <!-- datetimepicker -->
+    <link rel="stylesheet" href="css/plugins/jquery.datetimepicker.css">
+    <!-- fullCalendar -->
+    <link rel="stylesheet" href="css/plugins/fullcalendar.min.css">
+
     <link rel="stylesheet" href="views/assets/css/plugins.css">
     <link rel="stylesheet" href="views/assets/css/colors.css">
     <link rel="stylesheet" href="views/assets/css/style.css">
