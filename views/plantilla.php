@@ -51,6 +51,8 @@
 	<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 	<script src="assets/js/plugins.js"></script>
 	<script src="assets/js/main.js"></script>
+<!-- Alerts =================================== -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     
 </head>
 <body>
@@ -59,7 +61,9 @@
     include "views/components/header.php";
     
     if(isset($_GET["route"])){
-        if($_GET["route"]=="registro" ||
+         if($_GET["route"]=="registro" ||
+            $_GET["route"]=="view-arrendatario"||
+            $_GET["route"]=="request-arrendatario"||
             $_GET["route"]=="home"||
             $_GET["route"]=="view-admin"||
             $_GET["route"]=="usuarios-admin" ||
