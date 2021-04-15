@@ -1,3 +1,5 @@
+
+
 <!-- ====== Page Header ====== --> 
 <!-- <div class="page-header default-template-gradient"> -->
         <div class="container">
@@ -7,7 +9,7 @@
                 </div>
             </div>
         </div>  
-
+   
 <!--==================================
 INFO PERFIL
 ======================================-->
@@ -90,3 +92,21 @@ INFO PERFIL
 		</div>
 	</div>
 </div>
+<!-- ====== INICIO LINK DE RUTA====== -->
+   
+<div class="breadcrumbs-area">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-12">
+                   <div class="breadcrumbs">
+                       <span class="first-item">
+                        <a href="home">Volver al inicio</a></span>
+                       <span class="separator">&gt;</span>
+                       <span class="last-item">Mi perfil</span>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+<!-- ====== FIN LINK DE RUTA ======= --> 

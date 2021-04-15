@@ -10,7 +10,8 @@
         </div><!-- /.container-fluid -->           
     </div><!-- /.page-header -->
 
-   <!-- ====== Breadcrumbs Area====== --> 
+   <!-- ====== INICIO LINK DE RUTA====== -->
+   
    <div class="breadcrumbs-area">
        <div class="container">
            <div class="row">
@@ -21,12 +22,12 @@
                        <span class="separator">&gt;</span>
                        <span class="last-item">Apartamento familiar</span>
                    </div>
-               </div><!-- /.col-md-12 -->
-           </div><!-- /.row -->
-       </div><!-- /.container -->
-   </div><!-- /.breadcrumbs-area -->
+               </div>
+           </div>
+       </div>
+   </div>
 
-<!-- ====== Apartments-Single-Area ======= --> 
+<!-- ====== FIN LINK DE RUTA ======= --> 
 
 <!-- ====== INICIO IMAGENES ======= --> 
 <div class="apartment-single-area">
