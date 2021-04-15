@@ -12,5 +12,7 @@ require_once "models/casa.model.php";
 require_once "controllers/form.controller.php";
 require_once "models/form.model.php";
 
+// require_once "extensions/vendor/autoload";
+
 $plantilla = new TemplateController();
 $plantilla -> template();
