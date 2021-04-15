@@ -39,14 +39,6 @@
     <link rel="stylesheet" href="views/assets/css/colors.css">
     <link rel="stylesheet" href="views/assets/css/style.css">
     <link rel="stylesheet" href="views/assets/css/perfil.css">
-    <!-- Modernizr
-    ================================================== -->
-    <script src="views/assets/js/vendor/modernizr-2.8.3.min.js"></script>
-                        	<!-- All The JS Files
-	================================================== --> 
-	<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-	<script src="assets/js/plugins.js"></script>
-	<script src="assets/js/main.js"></script>
     
 </head>
 <body>
@@ -73,5 +65,14 @@
         include "views/components/footer.php";
  ?>
     
+    <!-- Modernizr
+    ================================================== -->
+    <script src="views/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+                        	<!-- All The JS Files
+	================================================== --> 
+	<script src="views/assets/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="views/assets/js/plugins.js"></script>
+	<script src="views/assets/js/main.js"></script>
+
 </body>
 </html>
