@@ -28,6 +28,10 @@
                                                 <li>
                                                     <a href="about.html">Sobre Nosotros</a>
                                                 </li>
+
+                                                <li>
+                                                    <a href="view-arrendatario">Alquilar casas</a>
+                                                </li>
                                                 
                                                 <li>
                                                     <a href="contact.html">Contáctenos</a>
