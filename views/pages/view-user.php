@@ -1,3 +1,10 @@
+<?php
+
+$usuario= new formUserController();
+$usuario-> houseRentController();
+
+?>
+
 <!-- ====== Page Header ====== --> 
 <div class="page-header default-template-gradient">
         <div class="container">
@@ -32,47 +39,50 @@
                 <div class="apartment-sidebar">                    
                     <div class="widget_rental_search clerafix">					
                         <div class="form-border gradient-border">
-                            <form action="" method="post" class="advance_search_query booking-form">
+                            <form action="" method="POST" class="advance_search_query booking-form">
                                 <div class="form-bg seven">
                                     <div class="form-content">
                                         <h2 class="form-title">Renta este apartamento</h2>
+
                                         <div class="form-group">
                                             <label>Nombres</label>
-                                            <input type="text" name="FirstName" placeholder="Andrés Felipe">
-                                        </div><!-- /.form-group -->
+                                            <input type="text" name="nombres" placeholder="Andrés Felipe">
+                                        </div>
                                         <div class="form-group">
                                             <label>Apellidos</label>
-                                            <input type="text" name="FirstName" placeholder="Pérez Pérez">
-                                        </div><!-- /.form-group -->
+                                            <input type="text" name="apellidos" placeholder="Pérez Pérez">
+                                        </div>
                                         <div class="form-group">
                                             <label>Número de documento</label>
-                                            <input type="text" name="FirstName" placeholder="10234567890">
-                                        </div><!-- /.form-group -->
+                                            <input type="text" name="documento" placeholder="10234567890">
+                                        </div>
                                         <div class="form-group">
-                                            <label>Número de celular</label>
-                                            <input type="tel" name="phone number" placeholder="+57 333 3333333">
-                                        </div><!-- /.form-group -->
+                                            <label>Tipo de Documento</label>
+                                            <select name="tipoDocumento">                        
+                                                <option>Selecciona</option>
+                                                <option value="0">Cedula</option>
+                                                <option value="1">Cedula extranjera</option>
+                                                <option value="2">Pasaporte</option>
+                                            </select>
+                                        </div>
                                         <div class="form-group">
                                             <label>Email</label>
-                                            <input type="email" name="Email" placeholder="ejemplo@hotmail.com">
-                                        </div><!-- /.form-group -->
+                                            <input type="email" name="email" placeholder="ejemplo@hotmail.com">
+                                        </div>
                                         <div class="form-group">
-                                            <label>Adultos</label>
-                                            <input type="number" step="1" min="1" max="4" name="quantity" value="1" title="Qty" size="4" class="input-text">
-                                        </div><!-- /.form-group -->
+                                            <label>Fecha Inicio</label>
+                                            <input type="date" name="fechaInicio">
+                                        </div>
                                         <div class="form-group">
-                                            <label>Niños</label>
-                                            <input type="number" step="1" min="0" max="2" name="quantity" value="1" title="Qty" size="4" class="input-text">
-                                        </div><!-- /.form-group -->
-                                        <div class="form-group">
-                                            <label>Deja un mensaje</label>
-                                            <textarea name="message" placeholder="Escribe tu mensaje aquí" class="form-controller"></textarea>
-                                        </div><!-- /.form-group -->
+                                            <label>Fecha Fin</label>
+                                            <input type="date" name="fechaFin">
+                                        </div>
+                                        
                                         <div class="form-group">
                                             <button type="submit" class="button default-template-gradient button-radius">Solicitar reserva</button>
-                                        </div><!-- /.form-group -->
-                                    </div><!-- /.form-content -->
-                                </div><!-- /.form-bg -->
-                            </form> <!-- /.advance_search_query -->
-                        </div><!-- /.form-border -->
-                    </div><!-- /.widget_rental_search -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </form> 
+                        </div>
+                    </div>
