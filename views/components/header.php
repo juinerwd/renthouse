@@ -23,12 +23,12 @@
                                 <a href="view-admin"><i class="fa fa-phone-square"></i>ADMIN</a>
                             </li>
                             <li>
-                                <a href="#" class="cd-signin"><i
+                                <a href="login" class="cd-signin"><i
                                         class="fa fa-address-book"></i>Login</a>
                             </li>
                             
                             <li>
-                                <a href="#" class="cd-signin"><i
+                                <a href="registro" class="cd-signin"><i
                                         class="fa fa-address-book"></i>Registro</a>
                             </li>
                             <li>
