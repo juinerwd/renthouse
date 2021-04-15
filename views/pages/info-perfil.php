@@ -36,21 +36,45 @@ INFO PERFIL
 
 				<div class="row">
 
-					<div class="col-6 d-none d-lg-block">
-						
-						<h4 class="float-left">Mis reservas</h4>
-
-					</div>
-
 					<!-- =====================================
 					MERCADO PAGO
 					======================================-->					
 
+					<div class="col-6 d-none d-lg-block"></div>
 
+						<div class="col-12 mt-3">
+
+						<h4 class="float-left">Mis datos</h4>
+
+							
+							<table class="table table-striped">
+							<thead>
+							<tr>
+								<th>Nombres</th>
+								<th>Apellidos</th>
+								<th>Documento</th>
+								<th>Correo electrónico</th>
+								<th>Editar información</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>Andrés Felipe</td>
+								<td>Perez Perez</td>
+								<td>10234567890</td>
+								<td>pepito@perez.com</td>
+								<td>								
+									<button type="button" class="btn btn-warning text-white"><i class="fas fa-user-edit"></i></button>									
+								</td>
+							</tr>
+							</tbody>
+						</table>
 					<div class="col-6 d-none d-lg-block"></div>
 
 					<div class="col-12 mt-3">
-						
+
+					<h4 class="float-left">Mis reservas</h4>
+
 						<table class="table table-striped">
 					    <thead>
 					      <tr>
@@ -58,7 +82,7 @@ INFO PERFIL
 					        <th>Habitación</th>
 					        <th>Fecha de Ingreso</th>
 					        <th>Fecha de Salida</th>
-					        <th>Comentarios</th>
+					        <th>Cancelar reserva</th>
 					      </tr>
 					    </thead>
 					    <tbody>
@@ -69,9 +93,7 @@ INFO PERFIL
 					        <td>03.09.2021</td>
 					        <td>
 					        
-								  <button type="button" class="btn btn-dark text-white"><i class="fas fa-pencil-alt"></i></button>
-								  <button type="button" class="btn btn-warning text-white"><i class="fas fa-eye"></i></button>
-								
+								  <button type="button" class="btn btn-danger text-white"><i class="fas fa-trash-alt"></i></button>	
 					        </td>
 					      </tr>
 					    </tbody>
