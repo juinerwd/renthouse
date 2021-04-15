@@ -59,8 +59,9 @@
     include "views/components/header.php";
     
     if(isset($_GET["route"])){
-     if(isset($_GET["route"])){
          if($_GET["route"]=="registro" ||
+            $_GET["route"]=="view-arrendatario"||
+            $_GET["route"]=="request-arrendatario"||
             $_GET["route"]=="home"||
             $_GET["route"]=="view-admin"||
             $_GET["route"]=="usuarios-admin" ||
