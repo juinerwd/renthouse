@@ -68,13 +68,14 @@
             $_GET["route"]=="view-admin"||
             $_GET["route"]=="usuarios-admin" ||
             $_GET["route"]=="apartmentone" ||
-            $_GET["route"]=="view-user"
-            ){
-             include "pages/".$_GET["route"].".php";
-         }
-     }else{
+            $_GET["route"]=="view-user" ||
+            $_GET["route"]=="login"
+        ){
+            include "pages/".$_GET["route"].".php";
+        }
+    }else{
          include "pages/home.php";
-     }
+    }
         include "views/components/footer.php";
  ?>
     
