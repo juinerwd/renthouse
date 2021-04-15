@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="views/assets/css/plugins.css">
     <link rel="stylesheet" href="views/assets/css/colors.css">
     <link rel="stylesheet" href="views/assets/css/style.css">
+    <link rel="stylesheet" href="views/assets/css/perfil.css">
     <!-- Modernizr
     ================================================== -->
     <script src="views/assets/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -60,6 +61,7 @@
             $_GET["route"]=="view-admin"||
             $_GET["route"]=="usuarios-admin" ||
             $_GET["route"]=="apartmentone" ||
+            $_GET["route"]=="info-perfil" ||
             $_GET["route"]=="view-user"
             ){
              include "pages/".$_GET["route"].".php";
