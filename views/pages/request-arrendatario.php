@@ -1,7 +1,8 @@
 <?php
 // include("../vistas/contenidos/header.php");
+$casa = new CasaController;
+$casa->insertCasaController();
 ?>
-
 <!-- ====== BANNER ARRENDATARIO ====== -->
 <div class="page-header default-template-gradient">
     <div class="container">
@@ -45,21 +46,24 @@
             </div><!-- /.col-md-12 -->
         </div><!-- /.row -->
         <div class="row">
-        
+
             <div class="col-md-9">
                 <div class="apartment-sidebar">
                     <div class="widget_rental_search clerafix">
                         <div class="form-border gradient-border">
-                            <form action="booking.html" method="get" class="advance_search_query booking-form">
+
+
+
+                            <form method="POST" class="advance_search_query booking-form">
                                 <div class="form-bg seven">
                                     <div class="form-content">
                                         <div class="form-group">
                                             <label>Título</label>
-                                            <input type="text" name="firstName" placeholder="Ejemplo: Casa de campo">
+                                            <input type="text" name="houseTittle" placeholder="Ejemplo: Casa de campo">
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <label>Descripción</label>
-                                            <input type="tel" name="phoneNumber" placeholder="Descripción de la casa">
+                                            <input type="tel" name="description" placeholder="Descripción de la casa">
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <label>Imagen principal</label>
@@ -67,19 +71,23 @@
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <label for="files">Imagenes auxiliares</label>
-                                            <input type="file" id="files" name="files" multiple>
+                                            <input type="file" id="files" name="otherImg" multiple>
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <label>Baños</label>
-                                            <input type="number" step="1" min="1" max="100" name="quantity" value="1" title="Qty" size="4" class="input-text">
+                                            <input type="number" step="1" min="1" max="10" name="restroom" value="1" title="Qty" size="4" class="input-text">
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <label>Número de habitaciones</label>
-                                            <input type="number" step="1" min="1" max="100" name="quantity" value="1" title="Qty" size="4" class="input-text">
+                                            <input type="number" step="1" min="1" max="20" name="rooms" value="1" title="Qty" size="4" class="input-text">
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <label>Parqueadero</label>
                                             <input type="text" name="parking" placeholder="Parqueadero">
+                                        </div><!-- /.form-group -->
+                                        <div class="form-group">
+                                            <label>Internet</label>
+                                            <input type="text" name="internet" placeholder="Parqueadero">
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <label>Precio</label>
@@ -87,7 +95,7 @@
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <label>Servicios adicionales</label>
-                                            <textarea name="message" placeholder="Message" class="form-controller"></textarea>
+                                            <textarea name="moreServices" placeholder="Message" class="form-controller"></textarea>
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <button type="submit" class="button default-template-gradient button-radius">Enviar solicitud</button>

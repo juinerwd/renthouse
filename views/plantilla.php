@@ -51,6 +51,12 @@
     <link rel="stylesheet" href="views/assets/css/style.css">
     <link rel="stylesheet" href="views/assets/css/perfil.css">
     <link rel="stylesheet" href="views/assets/css/forms.css">
+<<<<<<< HEAD
+=======
+    
+<!-- Alerts =================================== -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+>>>>>>> fab8a5157a9ec01fd0b3b7df8de1bc866d402f74
     
 </head>
 <body>
@@ -67,13 +73,14 @@
             $_GET["route"]=="usuarios-admin" ||
             $_GET["route"]=="apartmentone" ||
             $_GET["route"]=="info-perfil" ||
-            $_GET["route"]=="view-user"
+            $_GET["route"]=="view-user" ||
+            $_GET["route"]=="login"
             ){
              include "pages/".$_GET["route"].".php";
-         }
-     }else{
-         include "pages/home.php";
-     }
+         }else{
+          include "pages/home.php";
+        }
+      
         include "views/components/footer.php";
  ?>
     
