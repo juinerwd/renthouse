@@ -50,7 +50,6 @@
      if(isset($_GET["route"])){
 
          if($_GET["route"]=="registro" ||
-            $_GET["route"]=="home" ||
             $_GET["route"]=="view-arrendatario"||
             $_GET["route"]=="request-arrendatario"
             )
