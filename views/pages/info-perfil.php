@@ -1,44 +1,30 @@
-<!--=====================================
+<!-- ====== Page Header ====== --> 
+<!-- <div class="page-header default-template-gradient"> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">                
+                    <h2 class="page-title">Perfil de usuario</h2>        
+                </div>
+            </div>
+        </div>  
+
+<!--==================================
 INFO PERFIL
 ======================================-->
 
 <div class="infoPerfil container-fluid bg-white p-0 pb-5 mb-5">
-	
 	<div class="container">
-		
 		<div class="row">
 
-				<!--=====================================
-				PERFIL
-				======================================-->
-
-				<div class="descripcionPerfil">
-					
-					<div id="accordion">
-
-						<div class="card">
-
-
-
-						</div>
-
-					</div>
-
+			<div class="descripcionPerfil">
+				<div id="accordion">
+					<div class="card"></div>
 				</div>
-
 			</div>
-
-			<!--=====================================
-			BLOQUE DER
-			======================================-->
 
 			<div class="col-12 col-lg-8 colDerPerfil">
 
 				<div class="row">
-
-					<!-- =====================================
-					MERCADO PAGO
-					======================================-->					
 
 					<div class="col-6 d-none d-lg-block"></div>
 
@@ -46,7 +32,7 @@ INFO PERFIL
 
 						<h4 class="float-left">Mis datos</h4>
 
-							
+
 							<table class="table table-striped">
 							<thead>
 							<tr>
@@ -63,8 +49,8 @@ INFO PERFIL
 								<td>Perez Perez</td>
 								<td>10234567890</td>
 								<td>pepito@perez.com</td>
-								<td>								
-									<button type="button" class="btn btn-warning text-white"><i class="fas fa-user-edit"></i></button>									
+								<td>
+									<button type="button" class="btn btn-warning text-white"><i class="fas fa-user-edit"></i></button>
 								</td>
 							</tr>
 							</tbody>
@@ -92,21 +78,15 @@ INFO PERFIL
 					        <td>30.08.2021</td>
 					        <td>03.09.2021</td>
 					        <td>
-					        
-								  <button type="button" class="btn btn-danger text-white"><i class="fas fa-trash-alt"></i></button>	
+
+								  <button type="button" class="btn btn-danger text-white"><i class="fas fa-trash-alt"></i></button>
 					        </td>
 					      </tr>
 					    </tbody>
 					  </table>
-
 					</div>
-
 				</div>
-			
 			</div>
-
 		</div>
-
 	</div>
-
 </div>
