@@ -5,6 +5,7 @@
 
 ?>
 <!doctype html>
+
 <html class="no-js" lang="en">
 
 <head>
@@ -40,23 +41,32 @@
     <!-- CSS
     ================================================== -->
     <!-- bootstrap datepicker -->
-	<link rel="stylesheet" href="css/plugins/bootstrap-datepicker.standalone.min.css">
+	<link rel="stylesheet" href="views/assets/css/plugins/bootstrap-datepicker.standalone.min.css">
     <!-- datetimepicker -->
-    <link rel="stylesheet" href="css/plugins/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="views/assets/css/plugins/jquery.datetimepicker.css">
     <!-- fullCalendar -->
-    <link rel="stylesheet" href="css/plugins/fullcalendar.min.css">
+    <link rel="stylesheet" href="views/assets/css/plugins/fullcalendar.min.css">
 
     <link rel="stylesheet" href="views/assets/css/plugins.css">
     <link rel="stylesheet" href="views/assets/css/colors.css">
     <link rel="stylesheet" href="views/assets/css/style.css">
     <link rel="stylesheet" href="views/assets/css/perfil.css">
     <link rel="stylesheet" href="views/assets/css/forms.css">
-<<<<<<< HEAD
-=======
+
+    <!-- JS CALENDARIO
+    ================================================== -->
+
+    <!-- bootstrap datepicker -->
+	<script src="views/assets/js/plugins/bootstrap-datepicker.min.js"></script>
+    <!-- datetimepicker -->
+    <script src="views/assets/js/plugins/jquery.datetimepicker.full.min.js"></script>
+    <!-- fullCalendar -->
+    <script src="views/assets/js/plugins/moment.js"></script>
+    <!-- https://fullcalendar.io/docs/background-events-demo -->	
+    <script src="views/assets/js/plugins/fullcalendar.min.js"></script>
     
 <!-- Alerts =================================== -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
->>>>>>> fab8a5157a9ec01fd0b3b7df8de1bc866d402f74
     
 </head>
 <body>
@@ -80,7 +90,7 @@
          }else{
           include "pages/home.php";
         }
-      
+    }
         include "views/components/footer.php";
  ?>
     
@@ -92,6 +102,8 @@
 	<script src="views/assets/js/vendor/jquery-1.12.4.min.js"></script>
 	<script src="views/assets/js/plugins.js"></script>
 	<script src="views/assets/js/main.js"></script>
+
+    
 
 </body>
 </html>

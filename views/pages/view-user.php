@@ -1,7 +1,7 @@
 <?php
 
-$usuario= new formUserController();
-$usuario-> houseRentController();
+  $usuario = new formUserController();
+  $usuario-> houseRentController();
 
 ?>
 
@@ -44,43 +44,45 @@ $usuario-> houseRentController();
                                     <div class="form-content">
                                         <h2 class="form-title">Renta este apartamento</h2>
 
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <label>Nombres</label>
-                                            <input type="text" name="nombres" placeholder="Andrés Felipe">
+                                            <input type="text" name="nombres" placeholder="Andrés Felipe" required>
                                         </div>
                                         <div class="form-group">
                                             <label>Apellidos</label>
-                                            <input type="text" name="apellidos" placeholder="Pérez Pérez">
+                                            <input type="text" name="apellidos" placeholder="Pérez Pérez" required>
                                         </div>
                                         <div class="form-group">
                                             <label>Número de documento</label>
-                                            <input type="text" name="documento" placeholder="10234567890">
+                                            <input type="text" name="documento" placeholder="10234567890" required>
                                         </div>
                                         <div class="form-group">
                                             <label>Tipo de Documento</label>
-                                            <select name="tipoDocumento">                        
+                                            <select name="tipodocumento" required>                        
                                                 <option>Selecciona</option>
-                                                <option value="0">Cedula</option>
+                                                <option value="0">Cedula de ciudadanía</option>
                                                 <option value="1">Cedula extranjera</option>
                                                 <option value="2">Pasaporte</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label>Email</label>
-                                            <input type="email" name="email" placeholder="ejemplo@hotmail.com">
-                                        </div>
+                                            <input type="email" name="email" placeholder="ejemplo@hotmail.com" required>
+                                        </div> -->
+
                                         <div class="form-group">
                                             <label>Fecha Inicio</label>
-                                            <input type="date" name="fechaInicio">
+                                            <input type="date" name="fechaInicio" value="<?php echo $_POST["fechaInicio"]; ?>">
                                         </div>
                                         <div class="form-group">
                                             <label>Fecha Fin</label>
-                                            <input type="date" name="fechaFin">
+                                            <input type="date" name="fechaFin" value="<?php echo $_POST["fechaFin"]; ?>">
                                         </div>
                                         
                                         <div class="form-group">
-                                            <button type="submit" class="button default-template-gradient button-radius">Solicitar reserva</button>
+                                            <button type="submit" class="button default-template-gradient button-radius">Pagar reserva</button>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </form> 

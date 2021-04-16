@@ -136,21 +136,32 @@
                     <div class="apartment-sidebar">                    
         				<div class="widget_rental_search clerafix">					
         					<div class="form-border gradient-border">
-        						<form action="view-user" method="get" class="advance_search_query booking-form">
-        							<div class="form-bg seven">
+
+        						<form action="view-user" method="post" class="advance_search_query booking-form">
+
+                                <input type="hidden" name="casa_idcasa" value="">
+
+        							<div class="form-bg<>>>>> seven">
         								<div class="form-content">
                                             <h2 class="form-title">Renta este apartamento</h2>
+                                                <div class="form-group">
+                                                <label>Fecha entrada</label>
+                                                <input type="date" name="fechaInicio" required>
+                                        </div>
+                                                <div class="form-group">
+                                                <label>Fecha salida</label>
+                                                <input type="date" name="fechaFin" required>
+                                        </div>
         									<div class="form-group">
-                                                <button type="submit" class="button default-template-gradient button-radius">Rellenar formulario de reserva</button>
-        									</div><!-- /.form-group -->
-        								</div><!-- /.form-content -->
-        							</div><!-- /.form-bg -->
-        						</form> <!-- /.advance_search_query -->
-        					</div><!-- /.form-border -->
-        				</div><!-- /.widget_rental_search -->
-
-                </div><!-- /.apartment-sidebar -->
-            </div> <!-- .col-md-4 -->
-        </div> <!-- /.row -->
-    </div> <!-- /.container -->
-</div> <!-- /.appartment-single-area -->
+                                                <button type="submit" class="button default-template-gradient button-radius">Ver disponibilidad</button>
+        									</div>
+        								</div>
+        							</div>
+        						</form><!-- /.form-group --> 
+        					</div>
+        				</div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</div>
