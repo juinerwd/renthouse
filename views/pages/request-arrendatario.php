@@ -57,21 +57,25 @@ $casa->insertCasaController();
                             <form method="POST" class="advance_search_query booking-form">
                                 <div class="form-bg seven">
                                     <div class="form-content">
-                                        <div class="form-group">
+                                    <div class="form-group">
                                             <label>Título</label>
                                             <input type="text" name="houseTittle" placeholder="Ejemplo: Casa de campo">
+                                        </div><!-- /.form-group -->
+                                        <div class="form-group">
+                                            <label>Ciudad</label>
+                                            <input type="text" name="city" placeholder="Ciudad donde se ubica la propiedad">
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <label>Descripción</label>
                                             <input type="tel" name="description" placeholder="Descripción de la casa">
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
-                                            <label>Imagen principal</label>
-                                            <input type="file" name="mainImage" placeholder="example@domain.com">
+                                            <labelI>Imagen principal</labelI>
+                                            <input type="file" name="mainImage" id="mainmage" class="image" placeholder="Selecciona una imagen principal">
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <label for="files">Imagenes auxiliares</label>
-                                            <input type="file" id="files" name="otherImg" multiple>
+                                            <input type="file" name="otherImg" class="image" multiple>
                                         </div><!-- /.form-group -->
                                         <div class="form-group">
                                             <label>Baños</label>
