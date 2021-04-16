@@ -18,13 +18,16 @@
             $sql->bindParam(":Email", $dato['Email'], PDO::PARAM_STR);
             $sql->bindParam(":Password", $dato['Pass'], PDO::PARAM_STR);
             $sql->bindParam(":Recidencia", $dato['Recidencia'], PDO::PARAM_STR);
-            $sql->bindParam(":Politica", $dato['Politica'], PDO::PARAM_STR);
-            $sql->bindParam(":Idrol", 2, PDO::PARAM_INT);
-            $sql->bindParam(":Activo", 1, PDO::PARAM_INT);
+            $sql->bindParam(":Politica", $dato['Politica'], PDO::PARAM_INT);
+            $sql->bindParam(":Idrol", $dato['Idrol'], PDO::PARAM_INT);
+            $sql->bindParam(":Activo", $dato['Activo'], PDO::PARAM_INT);
             $sql->bindParam(":Iddocumento", $dato['Iddocumento'], PDO::PARAM_INT);
             $sql->bindParam(":Documento", $dato['Documento'], PDO::PARAM_INT);
 
-            $sql->execute();
-            return $sql;
+            if($sql->execute()){
+                return "ok";
+            }else{
+                return "error";
+            }
         }
     }
