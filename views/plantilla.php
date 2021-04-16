@@ -1,7 +1,7 @@
 <!-- url amigables -->
 <?php
 
-    $ruta = RouteController::ctrRuta();
+$ruta = RouteController::ctrRuta();
 
 ?>
 <!doctype html>
@@ -35,9 +35,9 @@
 
     <!-- Custom Font
     ================================================== -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i%7cPoppins:300,400,500,600,700" rel="stylesheet"> 
-    
-    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i%7cPoppins:300,400,500,600,700" rel="stylesheet">
+
+
     <!-- CSS
     ================================================== -->
     <!-- bootstrap datepicker -->
@@ -66,16 +66,18 @@
     <script src="views/assets/js/plugins/fullcalendar.min.js"></script>
     
 <!-- Alerts =================================== -->
+ 
+    <!-- Alerts =================================== -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    
+
 </head>
 <body>
- <?php
+    <?php
     // include "views/components/menu.php";
     include "views/components/header.php";
-    
-    if(isset($_GET["route"])){
-         if($_GET["route"]=="registro" ||
+    if (isset($_GET["route"])) {
+        if (
+            $_GET["route"]=="registro" ||
             $_GET["route"]=="view-arrendatario"||
             $_GET["route"]=="request-arrendatario"||
             $_GET["route"]=="home"||
@@ -85,15 +87,18 @@
             $_GET["route"]=="info-perfil" ||
             $_GET["route"]=="view-user" ||
             $_GET["route"]=="login"
-            ){
-             include "pages/".$_GET["route"].".php";
-         }else{
-          include "pages/home.php";
+        ) {
+            include "pages/" . $_GET["route"] . ".php";
         }
     }
         include "views/components/footer.php";
  ?>
     
+
+    <!-- <p>
+        <script src="views/assets/js/arrendatario.js"></script>
+    </p> -->
+    <script src="views/assets/js/usuarios.js"></script>     
     <!-- Modernizr
     ================================================== -->
     <script src="views/assets/js/vendor/modernizr-2.8.3.min.js"></script>

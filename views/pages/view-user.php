@@ -1,7 +1,7 @@
 <?php
 
-  $usuario = new formUserController();
-  $usuario-> houseRentController();
+$usuario= new formUserController();
+$usuario->houseRentController();
 
 ?>
 
@@ -88,3 +88,4 @@
                             </form> 
                         </div>
                     </div>
+               
