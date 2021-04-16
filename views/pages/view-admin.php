@@ -1,7 +1,5 @@
 
-<?php include "views/components/header-admin.php"; ?>
-
-     
+    
 <div class="page-header default-template-gradient">
     <div class="container">
         <div class="row">
@@ -11,7 +9,26 @@
             </div><!-- /.col-md-12 -->
         </div><!-- /.row-->
     </div><!-- /.container-fluid -->           
-</div><!-- /.page-header -->   
+</div><!-- /.page-header --> 
+<div class="breadcrumbs-area">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-12">
+                   <div class="breadcrumbs">
+                       <span class="first-item">
+                        <a href="home">Inicio</a></span>
+                       <span class="separator">&gt;</span>
+                       <span class="last-item">Apartamento familiar</span>
+                   </div>
+               </div><!-- /.col-md-12 -->
+           </div><!-- /.row -->
+       </div><!-- /.container -->
+   </div><!-- /.breadcrumbs-area -->
+
+<div class="text-center">
+    <a href="usuarios-admin"><button type="submit" class="button nevy-button button-radius default-template-gradient">Listado Usuarios</button></a>
+                        <!-- <a href="#" class="button nevy-button button-radius default-template-gradient">Cancelar reserva</a> -->
+</div><!-- /.text-center -->  
 
 <!-- ====== Availability Area======= --> 
 <!--<div class="availability-area two">

@@ -1,7 +1,7 @@
 <?php
 
 $usuario= new formUserController();
-$usuario-> houseRentController();
+$usuario->houseRentController();
 
 ?>
 
@@ -45,31 +45,6 @@ $usuario-> houseRentController();
                                         <h2 class="form-title">Renta este apartamento</h2>
 
                                         <div class="form-group">
-                                            <label>Nombres</label>
-                                            <input type="text" name="nombres" placeholder="Andrés Felipe">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Apellidos</label>
-                                            <input type="text" name="apellidos" placeholder="Pérez Pérez">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Número de documento</label>
-                                            <input type="text" name="documento" placeholder="10234567890">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Tipo de Documento</label>
-                                            <select name="tipoDocumento">                        
-                                                <option>Selecciona</option>
-                                                <option value="0">Cedula</option>
-                                                <option value="1">Cedula extranjera</option>
-                                                <option value="2">Pasaporte</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Email</label>
-                                            <input type="email" name="email" placeholder="ejemplo@hotmail.com">
-                                        </div>
-                                        <div class="form-group">
                                             <label>Fecha Inicio</label>
                                             <input type="date" name="fechaInicio">
                                         </div>
@@ -86,3 +61,4 @@ $usuario-> houseRentController();
                             </form> 
                         </div>
                     </div>
+               

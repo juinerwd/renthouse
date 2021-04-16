@@ -78,5 +78,7 @@
         include "views/components/footer.php";
  ?>
     
+ <script src="views/assets/js/usuarios.js"></script>     
 </body>
+
 </html>
