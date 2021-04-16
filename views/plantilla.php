@@ -52,7 +52,7 @@ $ruta = RouteController::ctrRuta();
     <link rel="stylesheet" href="views/assets/css/style.css">
     <link rel="stylesheet" href="views/assets/css/perfil.css">
     <link rel="stylesheet" href="views/assets/css/forms.css">
-
+  
     <!-- JS CALENDARIO
     ================================================== -->
 
@@ -65,8 +65,6 @@ $ruta = RouteController::ctrRuta();
     <!-- https://fullcalendar.io/docs/background-events-demo -->	
     <script src="views/assets/js/plugins/fullcalendar.min.js"></script>
     
-<!-- Alerts =================================== -->
- 
     <!-- Alerts =================================== -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
@@ -75,9 +73,11 @@ $ruta = RouteController::ctrRuta();
     <?php
     // include "views/components/menu.php";
     include "views/components/header.php";
-    if (isset($_GET["route"])) {
-        if (
-            $_GET["route"]=="registro" ||
+
+    //session_start();
+    $peticionAjax=false;
+    if(isset($_GET["route"])){
+         if($_GET["route"]=="registro" ||
             $_GET["route"]=="view-arrendatario"||
             $_GET["route"]=="request-arrendatario"||
             $_GET["route"]=="home"||
@@ -93,8 +93,6 @@ $ruta = RouteController::ctrRuta();
     }
         include "views/components/footer.php";
  ?>
-    
-
     <!-- <p>
         <script src="views/assets/js/arrendatario.js"></script>
     </p> -->
@@ -107,8 +105,5 @@ $ruta = RouteController::ctrRuta();
 	<script src="views/assets/js/vendor/jquery-1.12.4.min.js"></script>
 	<script src="views/assets/js/plugins.js"></script>
 	<script src="views/assets/js/main.js"></script>
-
-    
-
 </body>
 </html>

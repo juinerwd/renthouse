@@ -1,4 +1,4 @@
-<footer class="footer-area bg-gray-color" style="background-image:url(img/footer-bg.png)">
+<footer class="footer-area bg-gray-color" style="background-image:url(views/assets/img/footer-bg.png)">
        <div class="container">
            <div class="row">
                <div class="col-md-4">

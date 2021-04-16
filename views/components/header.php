@@ -1,6 +1,4 @@
 <!-- ====== Header Mobile Area ====== -->
-
-
 <header class="header-area bg-gray-color style-two hidden-xs hidden-sm">
     <div class="container">
         <div class="header-top-content">
@@ -23,12 +21,12 @@
                                 <a href="view-admin"><i class="fa fa-phone-square"></i>ADMIN</a>
                             </li>
                             <li>
-                                <a href="login" class="cd-signin"><i
+                                <a href="login" class=""><i
                                         class="fa fa-address-book"></i>Login</a>
                             </li>
                             
                             <li>
-                                <a href="registro" class="cd-signin"><i
+                                <a href="registro" class=""><i
                                         class="fa fa-address-book"></i>Registro</a>
                             </li>
                             <li>
