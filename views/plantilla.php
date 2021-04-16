@@ -15,7 +15,7 @@ $ruta = RouteController::ctrRuta();
 
     <!-- Specific Meta
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="description" content="glimmer is a modern presentation HTML5 Blog template.">
     <meta name="keywords" content="HTML5, Template, Design, Development, Blog" />
     <meta name="author" content="">
@@ -42,7 +42,9 @@ $ruta = RouteController::ctrRuta();
     <link rel="stylesheet" href="views/assets/css/plugins.css">
     <link rel="stylesheet" href="views/assets/css/colors.css">
     <link rel="stylesheet" href="views/assets/css/style.css">
+    <link rel="stylesheet" href="views/assets/css/perfil.css">
     <link rel="stylesheet" href="views/assets/css/forms.css">
+<<<<<<< HEAD
     <!-- Modernizr
     ================================================== -->
     <script src="views/assets/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -52,6 +54,10 @@ $ruta = RouteController::ctrRuta();
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- Alerts =================================== -->
+=======
+    
+<!-- Alerts =================================== -->
+>>>>>>> f349382a6d7918885aa0d1f00527084b518dab9e
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </head>
@@ -60,6 +66,7 @@ $ruta = RouteController::ctrRuta();
     <?php
     // include "views/components/menu.php";
     include "views/components/header.php";
+<<<<<<< HEAD
 
     if (isset($_GET["route"])) {
         if (
@@ -83,6 +90,38 @@ $ruta = RouteController::ctrRuta();
     <p>
         <script src="views/assets/js/arrendatario.js"></script>
     </p>
+=======
+    
+    if(isset($_GET["route"])){
+         if($_GET["route"]=="registro" ||
+            $_GET["route"]=="view-arrendatario"||
+            $_GET["route"]=="request-arrendatario"||
+            $_GET["route"]=="home"||
+            $_GET["route"]=="view-admin"||
+            $_GET["route"]=="usuarios-admin" ||
+            $_GET["route"]=="apartmentone" ||
+            $_GET["route"]=="info-perfil" ||
+            $_GET["route"]=="view-user" ||
+            $_GET["route"]=="login"
+            ){
+             include "pages/".$_GET["route"].".php";
+         }else{
+          include "pages/home.php";
+        }
+      
+        include "views/components/footer.php";
+ ?>
+    
+    <!-- Modernizr
+    ================================================== -->
+    <script src="views/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+                        	<!-- All The JS Files
+	================================================== --> 
+	<script src="views/assets/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="views/assets/js/plugins.js"></script>
+	<script src="views/assets/js/main.js"></script>
+
+>>>>>>> f349382a6d7918885aa0d1f00527084b518dab9e
 </body>
 
 </html>
