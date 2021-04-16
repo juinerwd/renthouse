@@ -1,50 +1,50 @@
 <?php
 
-$usuario= new formUserController();
-$usuario->houseRentController();
+$usuario= new form_UserController();
+$usuario->houseRent_Controller();
 
 ?>
 
-<!-- ====== Page Header ====== --> 
+<!-- ====== Page Header ====== -->
 <div class="page-header default-template-gradient">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">                
-                    <h2 class="page-title">Formulario</h2>
-                    <p class="page-description">Formulario de solicitud de apartamento</p>        
-                </div><!-- /.col-md-12 -->
-            </div><!-- /.row-->
-        </div><!-- /.container-fluid -->           
-    </div><!-- /.page-header -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-title">Formulario</h2>
+                <p class="page-description">Formulario de solicitud de apartamento</p>
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row-->
+    </div><!-- /.container-fluid -->
+</div><!-- /.page-header -->
 
-   <!-- ====== Breadcrumbs Area====== --> 
-   <div class="breadcrumbs-area">
-       <div class="container">
-           <div class="row">
-               <div class="col-md-12">
-                   <div class="breadcrumbs">
-                       <span class="first-item">
+<!-- ====== Breadcrumbs Area====== -->
+<div class="breadcrumbs-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <span class="first-item">
                         <a href="home">Inicio</a></span>
-                       <span class="separator">&gt;</span>
-                       <a href="apartmentone">Apartamento familiar</a></span>
-                       <span class="separator">&gt;</span>
-                       <span class="last-item">Formulario para rentar apartamento</span>
-                   </div>
-               </div><!-- /.col-md-12 -->
-           </div><!-- /.row -->
-       </div><!-- /.container -->
-   </div><!-- /.breadcrumbs-area -->
+                    <span class="separator">&gt;</span>
+                    <a href="apartmentone">Apartamento familiar</a></span>
+                    <span class="separator">&gt;</span>
+                    <span class="last-item">Formulario para rentar apartamento</span>
+                </div>
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.breadcrumbs-area -->
 
-            <div class="col-md-4">
-                <div class="apartment-sidebar">                    
-                    <div class="widget_rental_search clerafix">					
-                        <div class="form-border gradient-border">
-                            <form action="" method="POST" class="advance_search_query booking-form">
-                                <div class="form-bg seven">
-                                    <div class="form-content">
-                                        <h2 class="form-title">Renta este apartamento</h2>
+<div class="col-md-4">
+    <div class="apartment-sidebar">
+        <div class="widget_rental_search clerafix">
+            <div class="form-border gradient-border">
+                <form action="" method="POST" class="advance_search_query booking-form">
+                    <div class="form-bg seven">
+                        <div class="form-content">
+                            <h2 class="form-title">Renta este apartamento</h2>
 
-                                        <!-- <div class="form-group">
+                            <!-- <div class="form-group">
                                             <label>Nombres</label>
                                             <input type="text" name="nombres" placeholder="Andrés Felipe" required>
                                         </div>
@@ -70,22 +70,22 @@ $usuario->houseRentController();
                                             <input type="email" name="email" placeholder="ejemplo@hotmail.com" required>
                                         </div> -->
 
-                                        <div class="form-group">
-                                            <label>Fecha Inicio</label>
-                                            <input type="date" name="fechaInicio" value="<?php echo $_POST["fechaInicio"]; ?>">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Fecha Fin</label>
-                                            <input type="date" name="fechaFin" value="<?php echo $_POST["fechaFin"]; ?>">
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <button type="submit" class="button default-template-gradient button-radius">Pagar reserva</button>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </form> 
+                            <div class="form-group">
+                                <label>Fecha Inicio</label>
+                                <input type="date" name="fechaInicio" value="<?php echo $_POST["fechaInicio"]; ?>">
+                            </div>
+                            <div class="form-group">
+                                <label>Fecha Fin</label>
+                                <input type="date" name="fechaFin" value="<?php echo $_POST["fechaFin"]; ?>">
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="button default-template-gradient button-radius">Pagar
+                                    reserva</button>
+                            </div>
+
                         </div>
                     </div>
-               
+                </form>
+            </div>
+        </div>

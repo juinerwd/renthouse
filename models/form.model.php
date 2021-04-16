@@ -1,8 +1,8 @@
 <?php
 require_once "conexion.php";
 
-class formUserModel{
-    public static function houseRentModel($datosReserva, $tablaReserva){
+class form_UserModel{
+    public static function houseRent_Model($datosReserva, $tablaReserva){
 
         $stmt = Conexion::conectar()->prepare("INSERT INTO $tablaReserva (fechaInicio,fechaFin) 
         VALUES ( :fechaInicio, :fechaFin)");

@@ -1,8 +1,8 @@
 <?php
 
-class formUserController{
+class form_UserController{
 
-    public static function houseRentController(){
+    public static function houseRent_Controller(){
 
         if(isset($_POST["fechaInicio"])){
 
@@ -11,7 +11,7 @@ class formUserController{
                                 "fechaFin"=>$_POST['fechaFin']
             );
 
-            $respuesta = formUserModel::houseRentModel($datosReserva, $tablaReserva);
+            $respuesta = form_UserModel::houseRent_Model($datosReserva, $tablaReserva);
 
             if ($respuesta == "ok") {
 

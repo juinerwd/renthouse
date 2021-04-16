@@ -90,8 +90,11 @@ $ruta = RouteController::ctrRuta();
         ) {
             include "pages/" . $_GET["route"] . ".php";
         }
+    }else {
+        include "views/pages/home.php";
     }
-        include "views/components/footer.php";
+    
+    include "views/components/footer.php";
  ?>
     <!-- <p>
         <script src="views/assets/js/arrendatario.js"></script>
