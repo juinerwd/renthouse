@@ -24,12 +24,12 @@
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="apartments-content">
                         <div class="image-content">
-                            <a href="apartment-one.php"><img src="views/assets/img/apartment/habitacion-1.jpg" alt="apartment" /></a>
+                            <a href="apartmentone"><img src="views/assets/img/apartment/habitacion-1.jpg" alt="apartment" /></a>
                         </div><!-- /.image-content -->
                     
                         <div class="text-content">
                             <div class="top-content">
-                                <h3><a href="apartment-one.php">Casa familiar</a></h3>
+                                <h3><a href="apartmentone">Casa familiar</a></h3>
                                 <span>
                                     <i class="fa fa-map-marker"></i>
                                     Bogotá, Cundinamarca
@@ -235,7 +235,6 @@
                     </div><!-- /.partments-content -->
                 </div><!-- /.col-md-3 -->
 
-<!-- FIN VISTAS -->
         
             </div><!-- /.row -->
             <a href="#" class="button nevy-button button-radius">Todas las casas</a>

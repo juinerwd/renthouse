@@ -1,0 +1,86 @@
+/* -------------------------------- 
+Sign In/Sign Up Pop up 
+-------------------------------- */
+/* Login */
+.container-input-login {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.container-input-login .input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container-input-login .input .form-control{
+    width: 100%;
+}
+
+.btn-login{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-login button{
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #0E385D;
+}
+
+.enlace-login{
+    margin-top: 15px;
+}
+.enlace-login p{
+    margin: 0;
+}
+
+/* ======================================== */
+/* Register */
+.container-register {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+}
+.form-register{
+    padding: 30px;
+    -webkit-box-shadow: 3px 7px 12px 1px rgba(0,0,0,0.29);
+    -moz-box-shadow: 3px 7px 12px 1px rgba(0,0,0,0.29);
+    box-shadow: 3px 7px 12px 1px rgba(0,0,0,0.29);
+    background-color: #F7F7F7;
+}
+.form-register .container-input{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input {
+    margin-right: 20px;
+}
+
+.input .form-control {
+    width: 350px;
+    height: 45px;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.enlace-register, .enlace-login {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.enlace-register p {
+    margin: 0;
+}
+.container-button button{
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #0E385D;
+}
