@@ -43,7 +43,7 @@
             </thead>
             <tbody>
                 <?php 
-                $usuario= new userController();
+                $usuario= new adminController();
                 $usuario-> selectUserController();              
                 ?>
                 

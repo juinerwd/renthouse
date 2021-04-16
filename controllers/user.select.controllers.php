@@ -1,13 +1,13 @@
 <?php
 
-class userController{
+class adminController{
 
     public static function selectUserController(){
 
         $tabla="usuario";
         $rol="rol";
         $documento="documento";
-        $sql= userModel::selectUserModel($tabla, $rol, $documento);
+        $sql= adminModel::selectUserModel($tabla, $rol, $documento);
 
         foreach($sql as $datos => $value){
             echo "
@@ -30,7 +30,7 @@ class userController{
     }
     public static function deleteUserController($id){
         $tabla ="usuario";
-        $respuesta= userModel::deleteUserModelo($tabla, $id);
+        $respuesta= adminModel::deleteUserModelo($tabla, $id);
         echo $respuesta;
 
     }

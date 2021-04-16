@@ -1,7 +1,7 @@
 <?php
 require_once "conexion.php";
 
-class userModel{
+class adminModel{
 
     public static function selectUserModel($tabla, $rol, $documento){
         $stmt=Conexion::conectar()->prepare("SELECT u.idusuario,u.nombres,u.apellidos,u.email,u.password,u.recidencia,r.rol,u.activo,d.tipodocumento,u.documento
