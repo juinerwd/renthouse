@@ -1,7 +1,7 @@
 <!-- url amigables -->
 <?php
 
-    $ruta = RouteController::ctrRuta();
+$ruta = RouteController::ctrRuta();
 
 ?>
 <!doctype html>
@@ -15,7 +15,7 @@
 
     <!-- Specific Meta
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="description" content="glimmer is a modern presentation HTML5 Blog template.">
     <meta name="keywords" content="HTML5, Template, Design, Development, Blog" />
     <meta name="author" content="">
@@ -34,51 +34,57 @@
 
     <!-- Custom Font
     ================================================== -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i%7cPoppins:300,400,500,600,700" rel="stylesheet"> 
-    
-    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i%7cPoppins:300,400,500,600,700" rel="stylesheet">
+
+
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="views/assets/css/plugins.css">
     <link rel="stylesheet" href="views/assets/css/colors.css">
     <link rel="stylesheet" href="views/assets/css/style.css">
+    <link rel="stylesheet" href="views/assets/css/perfil.css">
     <link rel="stylesheet" href="views/assets/css/forms.css">
-    <!-- Modernizr
-    ================================================== -->
-    <script src="views/assets/js/vendor/modernizr-2.8.3.min.js"></script>
-                        	<!-- All The JS Files
-	================================================== --> 
-	<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-	<script src="assets/js/plugins.js"></script>
-	<script src="assets/js/main.js"></script>
-<!-- Alerts =================================== -->
+ 
+    <!-- Alerts =================================== -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    
+
 </head>
 <body>
- <?php
+    <?php
     // include "views/components/menu.php";
     include "views/components/header.php";
-    
-    if(isset($_GET["route"])){
-         if($_GET["route"]=="registro" ||
+    if (isset($_GET["route"])) {
+        if (
+            $_GET["route"]=="registro" ||
             $_GET["route"]=="view-arrendatario"||
             $_GET["route"]=="request-arrendatario"||
             $_GET["route"]=="home"||
             $_GET["route"]=="view-admin"||
             $_GET["route"]=="usuarios-admin" ||
             $_GET["route"]=="apartmentone" ||
-            $_GET["route"]=="view-user"
-            ){
-             include "pages/".$_GET["route"].".php";
-         }
-     }else{
-         include "pages/home.php";
-     }
-        include "views/components/footer.php";
- ?>
-    
- <script src="views/assets/js/usuarios.js"></script>     
-</body>
+            $_GET["route"]=="info-perfil" ||
+            $_GET["route"]=="view-user" ||
+            $_GET["route"]=="login"
+        ) {
+            include "pages/" . $_GET["route"] . ".php";
+        }
+    } else {
+        include "pages/home.php";
+    }
+    include "views/components/footer.php";
+    ?>
 
+    <!-- <p>
+        <script src="views/assets/js/arrendatario.js"></script>
+    </p> -->
+    <script src="views/assets/js/usuarios.js"></script>     
+    <!-- Modernizr
+    ================================================== -->
+    <script src="views/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+                        	<!-- All The JS Files
+	================================================== --> 
+	<script src="views/assets/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="views/assets/js/plugins.js"></script>
+	<script src="views/assets/js/main.js"></script>
+</body>
 </html>
