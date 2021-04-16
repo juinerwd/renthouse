@@ -1,5 +1,13 @@
     <?php
     // include("../vistas/contenidos/header.php");
+
+    $properties = new CasaController;
+    $propertiesArray = $properties->selectCasaController();
+
+    // echo "<pre>";
+    //         print_r($propertiesArray);
+    //     echo "</pre>";
+
     ?>
 
     <!-- ====== BANNER ARRENDATARIO ====== -->
@@ -32,7 +40,8 @@
         <a href="request-arrendatario" class="button nevy-button button-radius default-template-gradient">Publicar Casa</a>
     </div><!-- /.text-center -->
 
-    <!-- ====== Availability Area======= -->
+    <!-- ====== Properties registered ======= -->
+
     <div class="availability-area two">
         <div class="container">
             <div class="row">
@@ -45,6 +54,10 @@
             </div><!-- /.row -->
             <div class="row">
 
+
+            <?php
+                foreach ($propertiesArray as $key => $value) : ?>
+
                 <div class="col-md-3 col-sm-6 col-xs-6">
                     <div class="apartments-content">
                         <div class="image-content">
@@ -53,22 +66,22 @@
 
                         <div class="text-content">
                             <div class="top-content">
-                                <h3><a href="apartment-four.php">Casa para pareja</a></h3>
+                                <h3><a href="apartment-four.php"><?= $value['titulo']; ?> </a></h3>
                                 <span>
                                     <i class="fa fa-map-marker"></i>
-                                    Cali, Valle del Cauca
+                                    <?= $value['ciudad']; ?>
                                 </span>
                             </div><!-- /.top-content -->
                             <div class="bottom-content clearfix">
                                 <div class="meta-bed-room">
-                                    <i class="fa fa-bed"></i> 1 Habitación
+                                    <i class="fa fa-bed"></i> <?= $value['numhabitaciones']; ?> Habitación(es)
                                 </div>
                                 <div class="meta-bath-room">
-                                    <i class="fa fa-bath"></i>2 Baños
+                                    <i class="fa fa-bath"></i> <?= $value['numbanos']; ?> Baño(s)
                                 </div>
                                 <span class="clearfix"></span>
                                 <div class="rent-price pull-left">
-                                    $120.000
+                                    $ <?= $value['precio']; ?>
                                 </div>
                                 <div class="share-meta dropup pull-right">
                                     <ul>
@@ -93,12 +106,23 @@
                                             <a href="#"><i class="fa fa-star-o"></i></a>
                                         </li>
                                     </ul>
-                                    <div class="badge">Activo - Inactivo</div>
+                                    <div class="badge"> 
+                                        <?php 
+                                            if ($value['aprobado'] = 0) {
+                                                echo "Aprobado";
+                                            }else{
+                                                echo "Inactivo";
+                                            }
+                                        ?> 
+                                    </div>
                                 </div>
                             </div><!-- /.bottom-content -->
                         </div><!-- /.text-content -->
                     </div><!-- /.partments-content -->
                 </div><!-- /.col-md-3 -->
+
+                
+              <?php endforeach;  ?>
             </div>
         </div>
                 <!-- <div>

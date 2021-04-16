@@ -1,10 +1,11 @@
 <!-- url amigables -->
 <?php
 
-    $ruta = RouteController::ctrRuta();
+$ruta = RouteController::ctrRuta();
 
 ?>
 <!doctype html>
+
 <html class="no-js" lang="en">
 
 <head>
@@ -15,7 +16,7 @@
 
     <!-- Specific Meta
     ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="description" content="glimmer is a modern presentation HTML5 Blog template.">
     <meta name="keywords" content="HTML5, Template, Design, Development, Blog" />
     <meta name="author" content="">
@@ -34,22 +35,42 @@
 
     <!-- Custom Font
     ================================================== -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i%7cPoppins:300,400,500,600,700" rel="stylesheet"> 
-    
-    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i%7cPoppins:300,400,500,600,700" rel="stylesheet">
+
+
     <!-- CSS
     ================================================== -->
+    <!-- bootstrap datepicker -->
+	<link rel="stylesheet" href="views/assets/css/plugins/bootstrap-datepicker.standalone.min.css">
+    <!-- datetimepicker -->
+    <link rel="stylesheet" href="views/assets/css/plugins/jquery.datetimepicker.css">
+    <!-- fullCalendar -->
+    <link rel="stylesheet" href="views/assets/css/plugins/fullcalendar.min.css">
+
     <link rel="stylesheet" href="views/assets/css/plugins.css">
     <link rel="stylesheet" href="views/assets/css/colors.css">
     <link rel="stylesheet" href="views/assets/css/style.css">
+    <link rel="stylesheet" href="views/assets/css/perfil.css">
     <link rel="stylesheet" href="views/assets/css/forms.css">
+  
+    <!-- JS CALENDARIO
+    ================================================== -->
 
+    <!-- bootstrap datepicker -->
+	<script src="views/assets/js/plugins/bootstrap-datepicker.min.js"></script>
+    <!-- datetimepicker -->
+    <script src="views/assets/js/plugins/jquery.datetimepicker.full.min.js"></script>
+    <!-- fullCalendar -->
+    <script src="views/assets/js/plugins/moment.js"></script>
+    <!-- https://fullcalendar.io/docs/background-events-demo -->	
+    <script src="views/assets/js/plugins/fullcalendar.min.js"></script>
+    
     <!-- Alerts =================================== -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    
+
 </head>
 <body>
- <?php
+    <?php
     // include "views/components/menu.php";
     include "views/components/header.php";
 
@@ -63,16 +84,19 @@
             $_GET["route"]=="view-admin"||
             $_GET["route"]=="usuarios-admin" ||
             $_GET["route"]=="apartmentone" ||
+            $_GET["route"]=="info-perfil" ||
             $_GET["route"]=="view-user" ||
             $_GET["route"]=="login"
-        ){
-            include "pages/".$_GET["route"].".php";
+        ) {
+            include "pages/" . $_GET["route"] . ".php";
         }
-    }else{
-         include "pages/home.php";
     }
         include "views/components/footer.php";
  ?>
+    <!-- <p>
+        <script src="views/assets/js/arrendatario.js"></script>
+    </p> -->
+    <script src="views/assets/js/usuarios.js"></script>     
     <!-- Modernizr
     ================================================== -->
     <script src="views/assets/js/vendor/modernizr-2.8.3.min.js"></script>

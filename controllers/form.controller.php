@@ -1,22 +1,45 @@
 <?php
 
 class formUserController{
+
     public static function houseRentController(){
 
-        if(isset($_POST["documento"])){
-            $tabla="reserva";
-            $datos=array("nombres"=>$_POST['nombres'],
-                "apellidos"=>$_POST['apellidos'],
-                "documento"=>$_POST['documento'],
-                "tipodocumento"=>$_POST['tipoDocumento'],
-                "email"=>$_POST['email'],
-                "fechaInicio"=>$_POST['fechaInicio'],
-                "fechaFin"=>$_POST['fechaFin']
+        if(isset($_POST["fechaInicio"])){
+
+            $tablaReserva="reserva";
+            $datosReserva=array("fechaInicio"=>$_POST['fechaInicio'],
+                                "fechaFin"=>$_POST['fechaFin']
             );
 
-            $respuesta = formUserModel::houseRentModel($datos, $tabla);
+            $respuesta = formUserModel::houseRentModel($datosReserva, $tablaReserva);
 
-            var_dump($respuesta);
+            if ($respuesta == "ok") {
+
+                echo "
+                        <script>
+                        Swal.fire({
+                            icon: 'success',
+                            confirmButtonText: `Ok`,
+                            text: 'Registro exitoso!',
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location = 'view-arrendatario';
+                            }
+                        })
+                        
+                        </script>
+                        ";
+            } else {
+                echo "
+                        <script>
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: 'No se pudo realizar el registro!'
+                        })
+                        </script>
+                        ";
+            }
             
         }
 

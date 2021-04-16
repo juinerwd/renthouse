@@ -10,7 +10,8 @@
         </div><!-- /.container-fluid -->           
     </div><!-- /.page-header -->
 
-   <!-- ====== Breadcrumbs Area====== --> 
+   <!-- ====== INICIO LINK DE RUTA====== -->
+   
    <div class="breadcrumbs-area">
        <div class="container">
            <div class="row">
@@ -21,12 +22,14 @@
                        <span class="separator">&gt;</span>
                        <span class="last-item">Apartamento familiar</span>
                    </div>
-               </div><!-- /.col-md-12 -->
-           </div><!-- /.row -->
-       </div><!-- /.container -->
-   </div><!-- /.breadcrumbs-area -->
+               </div>
+           </div>
+       </div>
+   </div>
 
-<!-- ====== Apartments-Single-Area ======= --> 
+<!-- ====== FIN LINK DE RUTA ======= --> 
+
+<!-- ====== INICIO IMAGENES ======= --> 
 <div class="apartment-single-area">
     <div class="container">
         <div class="row">
@@ -71,25 +74,23 @@
                         </div> <!-- /.gallery-two -->
                 </div> <!-- /.corousel-gallery-content -->
 
+<!-- ====== FIN IMAGENES ======= -->
+
+<!-- ====== INICIO INFO ======= --> 
+
                 <div class="family-apartment-content mobile-extend">
                     <div class="tb">
                         <div class="tb-cell">
-                            <h3 class="apartment-title">Casa familiar</h3>
+                            <h3 class="apartment-title">Casa familiar</h3><!-- TITULO --> 
                         </div><!-- /.tb-cell -->
                         <div class="tb-cell">
-                            <p class="pull-right rent">Precio por noche: $250.000</p>
+                            <p class="pull-right rent">Precio por noche: $250.000</p><!-- PRECIO --> 
+                            
                         </div><!-- /.tb-cell -->
                     </div><!-- /.tb -->
                     <div class="clearfix"></div><!-- /.clearfix -->
-                    <p class="apartment-description default-gradient-before">2 habitaciones con closet, 2 baños sencillos, 1 baño con bañera, ubicado en el centro de Bogotá, Bogotá D.C.</p>
-                    <div class="price-details">
-                        <h3>Información del precio</h3>
-                        <ul>
-                            <li><span>Precio x noche: </span> $250.000</li>
-                            <li><span>Tarifa por servicio: </span>10% sobre el precio x noche</li>
-                        </ul>
-                    </div><!-- /.price -->
-
+                    <p class="apartment-description default-gradient-before">2 habitaciones | 3 baños.</p><!-- HABITACIONES Y BAÑOS --> 
+                
                     <div class="property-details">
                         <h3>Detalles de la propiedad</h3>
                         <ul>
@@ -102,11 +103,8 @@
                                 <h3>Descripción general</h3>
                                 <div class="overview">
                                     <ul>
-                                        <li>Depósito<span class="pull-right">$400.000</span></li>
-                                        <li>Tamaño del predio<span class="pull-right">80m²</span></li>
-                                        <li>Pisos totales <span class="pull-right">2</span></li>
-                                        <li>Estacionamiento<span class="pull-right">Sí</span></li>    
-                                        <li>Se permiten mascotas<span class="pull-right">Sí</span></li>
+                                        <li>Servicio de internet<span class="pull-right">Sí</span></li>
+                                        <li>Parqueadero<span class="pull-right">No</span></li>
                                     </ul>
                                 </div><!-- /.apartment-overview -->
                             </div><!-- /.col-md-12 -->
@@ -114,19 +112,6 @@
                     </div><!-- /.overview -->
                     <div class="indoor-features">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="features-title">Servicios</h3>
-                                <ul class="features-list">
-                                    <li>TV</li>
-                                    <li>Wifi</li>
-                                    <li>Lavadora</li>
-                                    <li>Toallas</li>
-                                    <li>Lavadora</li>
-                                    <li>Cocina</li>
-                                    <li>Estudio</li>
-                                    
-                                </ul>
-                            </div>
                             <div class="col-md-6">
                                 <h3 class="features-title">Reglas generales</h3>
                                 <ul class="features-list">
@@ -151,22 +136,32 @@
                     <div class="apartment-sidebar">                    
         				<div class="widget_rental_search clerafix">					
         					<div class="form-border gradient-border">
-        						<form action="view-user" method="get" class="advance_search_query booking-form">
-        							<div class="form-bg seven">
+
+        						<form action="view-user" method="post" class="advance_search_query booking-form">
+
+                                <input type="hidden" name="casa_idcasa" value="">
+
+        							<div class="form-bg<>>>>> seven">
         								<div class="form-content">
                                             <h2 class="form-title">Renta este apartamento</h2>
+                                                <div class="form-group">
+                                                <label>Fecha entrada</label>
+                                                <input type="date" name="fechaInicio" required>
+                                        </div>
+                                                <div class="form-group">
+                                                <label>Fecha salida</label>
+                                                <input type="date" name="fechaFin" required>
+                                        </div>
         									<div class="form-group">
-                                                <button type="submit" class="button default-template-gradient button-radius">Rellenar formulario de reserva</button>
-        									</div><!-- /.form-group -->
-        								</div><!-- /.form-content -->
-        							</div><!-- /.form-bg -->
-        						</form> <!-- /.advance_search_query -->
-        					</div><!-- /.form-border -->
-        				</div><!-- /.widget_rental_search -->
-
-                </div><!-- /.apartment-sidebar -->
-            </div> <!-- .col-md-4 -->
-        </div> <!-- /.row -->
-    </div> <!-- /.container -->
-</div> <!-- /.appartment-single-area -->
-
+                                                <button type="submit" class="button default-template-gradient button-radius">Ver disponibilidad</button>
+        									</div>
+        								</div>
+        							</div>
+        						</form><!-- /.form-group --> 
+        					</div>
+        				</div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+</div>

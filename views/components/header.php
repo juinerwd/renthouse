@@ -30,6 +30,9 @@
                                         class="fa fa-address-book"></i>Registro</a>
                             </li>
                             <li>
+                                <a href="info-perfil"><i class="fa fa-phone-square"></i>Mi perfil</a>
+                            </li>
+                            <li>
                                 <a href="#" class="main-search"><i class="fa fa-search"></i></a>
                             </li>
                             <li>
